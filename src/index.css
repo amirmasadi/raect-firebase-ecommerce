@@ -1,0 +1,87 @@
+@font-face {
+  font-family: shabnamMedium;
+  src: url(assets/fonts/Shabnam.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;*/
+  font-family: shabnamMedium !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dark-bg) !important;
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgb(71, 71, 71);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #585858;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-1);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+botton {
+  outline: none !important;
+}
+
+:root {
+  --dark-bg: #0e1012;
+  --gray-1: #bcb4b4;
+  --deep-dark: #161A1D;
+  --gray-2: #363636;
+  --white: white;
+  --black: black;
+  --blue: #007afc;
+  --blue2:#2c92ff;
+  /* --dark-bg: #262626;
+  --gray-1: #bcb4b4;
+  --deep-dark: #1e1e1e;
+  --gray-2: #363636;
+  --white: white;
+  --black: black; */
+}
+
+::selection {
+  color: var(--deep-dark);
+  background-color: var(--gray-1);
+}
+
+p,
+span,
+h3,
+h4,
+h5 {
+  color: var(--gray-1) !important;
+}
+
+p {
+  margin-bottom: 0px !important;
+}
